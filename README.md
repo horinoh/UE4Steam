@@ -9,5 +9,3 @@
 * スタンドアロンで起動する(PIEではダメ)
   * XXX.uproject 右クリック - Launch game または エディタから Standalone Game で起動する
   * 右下に Steam のオーバーレイが表示されたら OK
-  
-* オンライン対応には 2PC、2Steam アカウントが必要
