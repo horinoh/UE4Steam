@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class UE4Steam : ModuleRules
 {
-	public UE4Steam(TargetInfo Target)
+	public UE4Steam(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 

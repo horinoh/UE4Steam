@@ -5,23 +5,12 @@ using System.Collections.Generic;
 
 public class UE4SteamTarget : TargetRules
 {
-	public UE4SteamTarget(TargetInfo Target)
+	public UE4SteamTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 
-        bUsesSteam = true;
-	}
+		ExtraModuleNames.Add("UE4Steam");
 
-	//
-	// TargetRules interface.
-	//
-
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.AddRange( new string[] { "UE4Steam" } );
+		bUsesSteam = true;
 	}
 }
